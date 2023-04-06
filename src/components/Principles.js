@@ -97,6 +97,7 @@ export const Principles = () => {
                 </li>
                 <li>
                   <p>Causality</p>
+                  <p>In the redesigned shopping page, there are many items for user to purchase. When a purchase is done, the user don’t get any notification of successful purchase. To fix this mismatch between expectation and performance, mark an item to “purchased” after buy that item.</p>
                 </li>
                 <li>
                   <p>Fitts’s law </p>
