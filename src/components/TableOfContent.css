@@ -1,0 +1,14 @@
+.TOCNav {
+    width: 300px;
+    padding: 0px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px;
+    max-height: calc(100vh - 70px);
+    overflow: auto;
+    margin-top: 150px;
+  }
+  
+.TOCNav ul li {
+    margin-bottom: 15px;
+  }

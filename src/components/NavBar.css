@@ -1,0 +1,16 @@
+.navbar{
+    background-color:#eae7d6;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+  }
+
+  .me-auto .link{
+    color:#4c4b63;
+    padding:15px 10px;
+    outline:none;
+    margin-left: 20px;
+  }
+  
+.me-auto .link:hover {
+    background-color:#fff;
+    color:#121212;
+}

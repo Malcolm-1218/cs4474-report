@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavBar } from './components/NavBar';
+import { ExecDesc } from './components/ExecDesc';
+import { Routes, Route } from "react-router-dom";
+import { Intro } from './components/Intro';
+import { NavMap } from './components/NavMap';
+import { Principles } from './components/Principles';
+import { Evaluation } from './components/Evaluation';
+import { Recommend } from './components/Recommend';
+import { About } from './components/About';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Intro />} />
+        <Route path="/Executive-Level-Description" element={<ExecDesc />} />
+        <Route path="/Navigational-Map" element={<NavMap />} />
+        <Route path="/Design-Principles" element={<Principles />} />
+        <Route path="/Evaluation" element={<Evaluation/>} />
+        <Route path="/Recommendations" element={<Recommend />} />
+        <Route path="/AboutUs" element={<About/>} />
+      </Routes>
     </div>
   );
 }
