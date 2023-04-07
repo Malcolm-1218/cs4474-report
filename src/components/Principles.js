@@ -79,7 +79,7 @@ export const Principles = () => {
                       <img
                         src={affordance1}
                         alt="affordance1"
-                        style={{ width: "200px", height: "auto" }}
+                        style={{ width: "auto", height: "auto" }}
                       />
                     </li>
                     <br />
@@ -471,6 +471,8 @@ export const Principles = () => {
                   </p>
                 </li>
               </ol>
+              <br/>
+              <br/>
             </div>
           </Col>
         </Row>
