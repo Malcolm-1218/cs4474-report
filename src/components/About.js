@@ -6,7 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import Modal from "react-bootstrap/Modal";
-import "./About.css";
+
 
 export const About = () => {
   const [show1, setShow1] = useState(false);

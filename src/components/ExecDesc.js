@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import TableOfContent from './TableOfContent';
+import gameplay from '../assets/exec.jpg'
 
 export const ExecDesc = () => {
   return (
@@ -23,6 +24,7 @@ export const ExecDesc = () => {
                 Key design elements:</strong></p>
                 <p>
                 Gameplay: The original game design relies on using the mouse cursor as an input to simulate Joycon controls for maneuvering the “airplane”. However, this approach can be counterintuitive, difficult to discover, and conflicts with the user’s mental model, resulting in unnecessary complexity. Also, to bridge the gap between the user’s gulf of evaluation and execution, multiple design principles will be applied to change the outlook of in-game UI. Doing so will reduce the cognitive load on the user, making the game more accessible and enjoyable. There are also other flaws in terms of affordance and visibility, including a black slider in the bottom left corner that is hard to interpret the meaning, two numbers floating on both sides without a meaning (lack affordance), and the number on bottom right is ambiguous (is it number of lifes or health points?). Also, there is no feedback and scores when hitting the yellow ring. Things like this makes it important to redesign the icons and number on this page. By drawing on familiar metaphors and previous experiences of using similar controls in other games, users can learn more quickly and effectively how to control the airplane in this game to allow users to quickly grasp the idea of controlling the plane.</p>
+                <img src={gameplay} alt="Gameplay" style={{ width: '550px', height: 'auto' }}/><br/><br/>
                 <p>
                 The original design was also not visually appealing in terms of menu page design, lack of extendable features and lack of attractive information such as a background story. It makes the game less emotionally engaging. By adding background story and narrative descriptions to the items in this game, the game aims to create a more immersive experience, fostering a deeper connection between users and the game world. 
               </p>
