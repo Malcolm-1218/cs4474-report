@@ -21,6 +21,7 @@ export const Intro = () => {
               <p>The fourth section, the final heuristic evaluation, assesses the system's compliance with widely-accepted usability heuristics, providing insight into potential areas of improvement. This evaluation will help identify usability issues and establish priorities for system refinement.</p>
               <p>Lastly, the fifth section offers thoughtful recommendations for enhancing the system based on the findings from the heuristic evaluation. These recommendations aim to address identified issues and contribute to a more seamless, enjoyable, and efficient user experience.</p>
               <p>By systematically examining the interactive system through these five sections, this report will not only identify areas for improvement but also provide valuable insights and recommendations for enhancing the overall usability and user experience. Ultimately, our goal is to contribute to the development of more effective, accessible, and enjoyable human-computer interactions.</p>
+              <p>Click the link to see our project: <a href="https://github.com/IdoChennn/4474-Project-in-development">https://github.com/IdoChennn/4474-Project-in-development</a></p>
             </div>
           </Col>
         </Row>
