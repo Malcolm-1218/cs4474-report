@@ -37,6 +37,9 @@ export const Recommend = () => {
 
                 </ol>
                 <p>By implementing these recommendations, the game can improve the user experience, ensuring players have a more enjoyable and engaging time with the game.</p>
+                <p><i>Despite encountering technical challenges throughout the development process due to the use of Unity, we persevered and resolved various gameplay bugs that could potentially impact the user experience. We dedicated significant effort to each feature we developed and believe that if the original game was developed in a simpler editor other than Unity, the redesigned version of the game could have been even better.</i></p>
+                <br/>
+                <br/>
                 </div>
           </Col>
         </Row>

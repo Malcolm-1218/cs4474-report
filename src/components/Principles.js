@@ -12,6 +12,7 @@ import fitts2 from "../assets/principles/Fitts2.png";
 import memorability from "../assets/principles/Memorability.png";
 import mapping from "../assets/principles/Mapping.png";
 import control from "../assets/principles/Control.png";
+import causality from "../assets/principles/Causality.png";
 
 export const Principles = () => {
   return (
@@ -346,13 +347,16 @@ export const Principles = () => {
                 <li>
                   <p>Causality</p>
                   <p>
-                    In the redesigned shopping page, there are many items for
-                    user to purchase. When a purchase is done, the user don’t
-                    get any notification of successful purchase. To fix this
-                    mismatch between expectation and performance, mark an item
-                    to “purchased” after buy that item.
+                  The redesign contains multiple different items to be purchased. By purchasing, the user expects to know the features and important stats of this item. The stats of purchasable planes will change by clicking into the item’s page. This matches the user’s expectation of getting the related information of this item, thus helping the user to compare between items to make decisions.
+
                   </p>
+                  <img
+                      src={causality}
+                      alt="causality"
+                      style={{ width: "550px", height: "auto" }}
+                    />
                 </li>
+                <br/>
                 <li>
                   <p>Fitts’s law </p>
                   <p>
