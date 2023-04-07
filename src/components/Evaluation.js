@@ -12,6 +12,9 @@ export const Evaluation = () => {
           <Col xs={8}>
             <div className="content">
               <h2>Final Heuristic Evaluation of the system</h2>
+              <p>
+              This section includes evaluation of this game based on Nielsen's 10 heuristics for user-interface design that improves the user experience of video games. In each point of the heuristics, the advantages and flaws of the current design are analyzed with some recommendations towards a better product.
+              </p>
               <ol>
                 <li>
                   <p>Visibility of System Status</p>

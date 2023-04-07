@@ -1,5 +1,18 @@
 import { Container, Row, Col } from "react-bootstrap";
 import TableOfContent from "./TableOfContent";
+import affordance1 from '../assets/principles/Affordances1.png';
+import affordance2 from "../assets/principles/Affordances2.png";
+import feedforward from "../assets/principles/Feedforward.png";
+import constrains from "../assets/principles/Constrains.png";
+import chunking1 from "../assets/principles/Chunking1.png";
+import chunking2 from "../assets/principles/Chunking2.png";
+import transfer from "../assets/principles/Transfer.png";
+import fitts1 from "../assets/principles/Fitts1.png";
+import fitts2 from "../assets/principles/Fitts2.png";
+import memorability from "../assets/principles/Memorability.png";
+import mapping from "../assets/principles/Mapping.png";
+import control from "../assets/principles/Control.png";
+
 
 export const Principles = () => {
   return (
@@ -17,17 +30,8 @@ export const Principles = () => {
                   <p>80/20 rules</p>
 
                   <p>
-                    The original game design is overly simplistic. As players
-                    gain proficiency, they begin to demand more features and
-                    complexity. However, adding these features directly to the
-                    initial UI can result in a cluttered and confusing
-                    interface. By concentrating on the 20% of interface elements
-                    that deliver 80% of the functionality, designers can
-                    maintain a clean and user-friendly experience. To achieve
-                    this balance, it is advisable to allocate 80% of the screen
-                    space for the main content, such as the game world or
-                    application content, while reserving the remaining 20% for
-                    essential interface elements, including menus and toolbars.
+                  The original game design is overly simplistic. As players gain proficiency, they begin to demand more features and complexity. However, adding these features directly to the initial UI can result in a cluttered and confusing interface. By concentrating on the 20% of interface elements that deliver 80% of the functionality, designers can maintain a clean and user-friendly experience. To achieve this balance, it is advisable to allocate 80% of the screen space for the main content, such as the game world or application content, while reserving the remaining 20% for essential interface elements, including menus and toolbars.
+
                   </p>
                 </li>
                 <li>
@@ -36,8 +40,21 @@ export const Principles = () => {
                 </li>
                 <li>
                   <p>Affordances</p>
-                  <p>Affordances help users understand what actions are possible by providing visual or sensory cues that indicate the object's functionality or purpose. We designed a Home button featuring an easily recognizable house icon to convey its purpose to the user. These visual cues imply that clicking or tapping the button will navigate the user to the main menu or starting screen of the game.</p>
+                  <p>The original design does not provide enough affordance in both the UI design and the in-game HUD design. There are two major changes that are added.</p>
+                  <ul>
+                    <li>
+                      <p>The first one is adding a throttle figure that changes according to the speed to the in-game scene, so users can have a direct sense of the black slide bar on the left hand side represents. Another possible design is to replace the slide bar with a colored bar, similar to the indicator of gas panel of a race car. This way the user can clearly know this represents the throttle, so it improves affordance. Due to asset complexity, this is not yet implemented in the final product.</p>
+                      <img src={affordance1} alt="affordance1" style={{ width: '200px', height: 'auto' }}/>
+                    </li>
+                    <br/>
+                    <li>
+                      <p>Also, a home button featuring an easily recognizable house icon to convey its purpose to the user. These visual cues imply that clicking or tapping the button will navigate the user to the main menu or starting screen of the game.</p>
+                      <img src={affordance2} alt="affordance2" style={{ width: '550px', height: 'auto' }}/>
+                    </li>
+                  </ul>
                 </li>
+                <br/>
+                <br/>
                 <li>
                   <p>Familiarity</p>
                   <ul>
@@ -52,6 +69,7 @@ export const Principles = () => {
                 <li>
                   <p>Feedforward</p>
                   <p>When the user hovers their cursor over a specific upgrade, a tooltip appears, displaying a brief description of the upgrade's effects. This feedforward mechanism helps users understand the benefits of each upgrade before committing to it, enhancing the decision-making process and overall user experience.</p>
+                  <img src={feedforward} alt="feedforward" style={{ width: '550px', height: 'auto' }}/>
                 </li>
                 <li>
                   <p>See-through</p>
@@ -60,12 +78,19 @@ export const Principles = () => {
                 <li>
                   <p>Constrains</p>
                   <p>In the story mode, players are required to complete Chapter 1 before gaining access to Chapter 2, and they must finish Chapter 2 before proceeding to Chapter 3. This constraint ensures that users are not overwhelmed or overly confused by gradually introducing new content and challenges as they progress through the game. If a Chapter is not accessible, its representation can be dimmed or displayed in grayscale to signify its unavailability. Users will find that clicking on it has no effect.</p>
+                  <img src={constrains} alt="constrains" style={{ width: '550px', height: 'auto' }}/>
                 </li>
                 <li>
                   <p>Chunking</p>
+                  <p>The are numerous  items in the shopping page. If they are listed together in a alphabetical order, it would be messy and user would get confused. Chunking is used to separate different items according to their categories. Also, the features on settings page are also separated based on their functions to help user easily locate their desired target.</p>
+                  <img src={chunking1} alt="chunking1" style={{ width: '550px', height: 'auto' }}/>
+                  
+                  <img src={chunking2} alt="chunking2" style={{ width: '550px', height: 'auto' }}/>
                 </li>
                 <li>
                   <p>Mapping</p>
+                  <p>The original game does not have a clear clue to implicitly tell the user which button should be related to which function. Despite adding feedback, the layout of the components are also redesigned. The slider on the left reflects what the user's left hand (w and s key) can modify, and the slider on the right side reflects the mouse movements which are operated with the right hand.</p>
+                  <img src={chunking2} alt="chunking2" style={{ width: '550px', height: 'auto' }}/>
                 </li>
                 <li>
                   <p>Confirmation</p>
@@ -88,7 +113,16 @@ export const Principles = () => {
                 </li>
                 <li>
                   <p>Transfer</p>
-                  <p>We used transfer principle by those familiar interface elements. Use familiar symbols, icons, and terminology from real-world aviation or other flight simulation games in the game's interface. This will help users quickly understand the functions of various interface elements and navigate the game more efficiently.</p>
+                  <ul>
+                    <li>
+                      <p>The original design contains multiple features that are not familiar to users. We used the transfer principle by those familiar interface elements. Use familiar symbols, icons, and terminology from real-world aviation or other flight simulation games in the game's interface. This will help users quickly understand the functions of various interface elements and navigate the game more efficiently.</p>
+                      
+                    <img src={transfer} alt="transfer" style={{ width: '550px', height: 'auto' }}/>
+                    </li>
+                    <li>
+                      <p>Also, the control mode is familiar to those who have played other flight games. They can use their previous knowledge with controlling a plane directly on this game.</p>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <p>Control</p>
@@ -101,13 +135,16 @@ export const Principles = () => {
                 </li>
                 <li>
                   <p>Fitts’s law </p>
-                  <p>In the context of our game design, we applied Fitts's Law to improve usability by making important buttons larger and centrally positioned. For example:</p>
+                  <p>The original menu buttons was of the same size, listed out on the screen. In the context of our game design, we applied Fitts's Law to improve usability by making important buttons larger and centrally positioned. For example:</p>
                   <ul>
                     <li>
                       <p>Start game button: Place the "Start Game" button in a central location on the main menu screen and make it larger than other buttons. This ensures that users can quickly and easily begin the game.</p>
+                      
+                    <img src={fitts1} alt="fitts1" style={{ width: '550px', height: 'auto' }}/>
                     </li>
                     <li>
                       <p>Purchase button: In the in-game shop, make the "Purchase" button larger and position it close to the item description or price. This design choice helps users quickly identify and confirm their purchases.</p>
+                      <img src={fitts2} alt="fitts2" style={{ width: '550px', height: 'auto' }}/>
                     </li>
                   </ul>
               
@@ -127,6 +164,11 @@ export const Principles = () => {
                     </li>
                   </ul>
                   <p>Incorporating these feedback mechanisms will create a more engaging and responsive gaming experience for users, ensuring that they feel connected to the game and its various interactions.</p>
+                </li>
+                <li>
+                  <p>Memorability </p>
+                  <p>The old game design was easy to be forgotten because of its generic game design. A few features in the new design can make sure users can recall this game after a long period of time. For example, the game has replayable content, which challenges the user to achieve better performance. The game also has consistent mechanics that are easy to remember. To add more vivid background to this game and add user stickiness with emotional engagement, a background story and many item descriptions are added to the game.</p>
+                  <img src={memorability} alt="memorability" style={{ width: '550px', height: 'auto' }}/>
                 </li>
               </ol>
             </div>
