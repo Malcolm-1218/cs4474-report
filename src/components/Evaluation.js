@@ -1,9 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
 import TableOfContent from "./TableOfContent";
+import { NavBar } from "./NavBar";
 
 export const Evaluation = () => {
   return (
     <section className="Exec">
+      <NavBar />
       <Container>
         <Row className="aligh-items-center">
           <Col md="auto">

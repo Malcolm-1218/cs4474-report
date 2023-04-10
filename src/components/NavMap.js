@@ -1,10 +1,12 @@
 import { Container, Row, Col } from "react-bootstrap";
 import TableOfContent from './TableOfContent';
 import navmap from '../assets/NavMap.png'
+import { NavBar } from "./NavBar";
 
 export const NavMap = () => {
   return (
     <section className="Exec">
+      <NavBar/>
       <Container>
         <Row className="aligh-items-center">
           <Col md='auto'>

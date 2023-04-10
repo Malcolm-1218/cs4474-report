@@ -13,10 +13,12 @@ import memorability from "../assets/principles/Memorability.png";
 import mapping from "../assets/principles/Mapping.png";
 import control from "../assets/principles/Control.png";
 import causality from "../assets/principles/Causality.png";
+import { NavBar } from "./NavBar";
 
 export const Principles = () => {
   return (
     <section className="Exec">
+      <NavBar />
       <Container>
         <Row className="aligh-items-center">
           <Col md="auto">

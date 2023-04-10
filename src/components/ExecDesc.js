@@ -1,10 +1,12 @@
 import { Container, Row, Col } from "react-bootstrap";
 import TableOfContent from './TableOfContent';
 import gameplay from '../assets/exec.jpg'
+import { NavBar } from "./NavBar";
 
 export const ExecDesc = () => {
   return (
     <section className="Exec">
+      <NavBar />
       <Container>
         <Row className="aligh-items-center">
           <Col md='auto'>

@@ -13,9 +13,9 @@ import { About } from './components/About';
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      
       <Routes>
-        <Route path="/" element={<Intro />} />
+        <Route path="/cs4474-report" element={<Intro />} />
         <Route path="/Executive-Level-Description" element={<ExecDesc />} />
         <Route path="/Navigational-Map" element={<NavMap />} />
         <Route path="/Design-Principles" element={<Principles />} />

@@ -9,7 +9,7 @@ function TableOfContent() {
       <nav className="TOCNav">
         <ul>
         <li>
-            <Link to="/" className="link">
+            <Link to="/cs4474-report" className="link">
               Introduction
             </Link>
           </li>

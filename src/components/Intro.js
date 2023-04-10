@@ -1,9 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
 import TableOfContent from "./TableOfContent";
+import { NavBar } from "./NavBar";
 
 export const Intro = () => {
   return (
-    <section className="content">
+    <section>
+      <NavBar/>
       <Container>
         <Row className="aligh-items-center">
           <Col md="auto">
